@@ -8,9 +8,14 @@ namespace Diddy_Dungeon
 {
     internal class GameLogic
     {
-        public void run()
+        public void Run()
         {
             
+        }
+
+        private void HandleLoss()
+        {
+            File.Delete(Form1.betFilePath);
         }
     }
 }

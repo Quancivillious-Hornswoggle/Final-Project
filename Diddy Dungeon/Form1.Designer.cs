@@ -31,8 +31,8 @@
             output1 = new RichTextBox();
             output2 = new RichTextBox();
             output3 = new RichTextBox();
-            button1 = new Button();
             openFileButton = new Button();
+            betButton = new Button();
             fileDisplay = new RichTextBox();
             openFileDialog1 = new OpenFileDialog();
             SuspendLayout();
@@ -61,25 +61,26 @@
             output3.TabIndex = 2;
             output3.Text = "";
             // 
-            // button1
-            // 
-            button1.Font = new Font("Old English Text MT", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(55, 357);
-            button1.Name = "button1";
-            button1.Size = new Size(462, 75);
-            button1.TabIndex = 3;
-            button1.Text = "Select File To Bet 👅😈";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // openFileButton
             // 
-            openFileButton.Location = new Point(211, 562);
+            openFileButton.Font = new Font("Old English Text MT", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            openFileButton.Location = new Point(55, 357);
             openFileButton.Name = "openFileButton";
-            openFileButton.Size = new Size(150, 66);
-            openFileButton.TabIndex = 4;
-            openFileButton.Text = "button2";
+            openFileButton.Size = new Size(462, 75);
+            openFileButton.TabIndex = 3;
+            openFileButton.Text = "Select File To Bet 👅😈";
             openFileButton.UseVisualStyleBackColor = true;
+            openFileButton.Click += OpenFileClick;
+            // 
+            // betButton
+            // 
+            betButton.Location = new Point(211, 562);
+            betButton.Name = "betButton";
+            betButton.Size = new Size(150, 66);
+            betButton.TabIndex = 4;
+            betButton.Text = "Bet";
+            betButton.UseVisualStyleBackColor = true;
+            betButton.Click += BetButtonClick;
             // 
             // fileDisplay
             // 
@@ -103,8 +104,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(567, 673);
             Controls.Add(fileDisplay);
+            Controls.Add(betButton);
             Controls.Add(openFileButton);
-            Controls.Add(button1);
             Controls.Add(output3);
             Controls.Add(output2);
             Controls.Add(output1);
@@ -119,8 +120,8 @@
         private RichTextBox output1;
         private RichTextBox output3;
         private RichTextBox output2;
-        private Button button1;
         private Button openFileButton;
+        private Button betButton;
         private RichTextBox fileDisplay;
         private OpenFileDialog openFileDialog1;
     }

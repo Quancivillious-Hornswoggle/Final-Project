@@ -8,6 +8,7 @@ namespace Diddy_Dungeon
         public static RichTextBox slotOutput2;
         public static RichTextBox slotOutput3;
         public static RichTextBox betFileDisplay;
+        public static OpenFileDialog openFileDialog;
         public static string betFilePath;
 
         public Form1()
@@ -22,20 +23,24 @@ namespace Diddy_Dungeon
             slotOutput2 = output2;
             slotOutput3 = output3;
             betFileDisplay = fileDisplay;
+            openFileDialog = openFileDialog1;
+
+            FileHandler.InitializeEncryption();
 
             // Initialize the game
             GameLogic gameLogic = new GameLogic();
-            gameLogic.run();
+            gameLogic.Run();
         }
 
-        private void button1_Click(object sender, EventArgs e) // Button to open file and set it to bet
+        private void OpenFileClick(object sender, EventArgs e) // Button to open file and set it to bet
         {
-            openFileDialog1.Title = "Select File To Bet";
-            openFileDialog1.FileName = "Select A File";
-            openFileDialog1.Multiselect = false;
-            openFileDialog1.ShowDialog();
-            betFilePath = openFileDialog1.FileName;
-            betFileDisplay.Text = $"File being bet:\n{betFilePath}";
+            FileHandler.SetFileToBet();
+            bool status = FileHandler.EncryptFile(betFilePath);
+        }
+
+        private void BetButtonClick(object sender, EventArgs e)
+        {
+
         }
     }
 }
