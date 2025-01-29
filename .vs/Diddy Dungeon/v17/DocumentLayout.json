@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|c:\\users\\yello\\source\\repos\\diddy dungeon\\diddy dungeon\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|solutionrelative:diddy dungeon\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|c:\\users\\yello\\source\\repos\\diddy dungeon\\diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|solutionrelative:diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|c:\\users\\yello\\source\\repos\\diddy dungeon\\diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|solutionrelative:diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|c:\\users\\yello\\source\\repos\\diddy dungeon\\diddy dungeon\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|solutionrelative:diddy dungeon\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A05F98BB-C4F3-4DA3-B0A9-0BCCC399A7DC}|Diddy Dungeon\\Diddy Dungeon.csproj|solutionrelative:diddy dungeon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileHandler.cs",
+              "DocumentMoniker": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\FileHandler.cs",
+              "RelativeDocumentMoniker": "Diddy Dungeon\\FileHandler.cs",
+              "ToolTip": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\FileHandler.cs",
+              "RelativeToolTip": "Diddy Dungeon\\FileHandler.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:56:09.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,35 +53,33 @@
               "RelativeDocumentMoniker": "Diddy Dungeon\\GameLogic.cs",
               "ToolTip": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\GameLogic.cs",
               "RelativeToolTip": "Diddy Dungeon\\GameLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T18:58:36.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T18:58:36.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\Form1.cs",
               "RelativeDocumentMoniker": "Diddy Dungeon\\Form1.cs",
               "ToolTip": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\Form1.cs",
               "RelativeToolTip": "Diddy Dungeon\\Form1.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwB4AAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T18:46:06.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\Form1.cs",
               "RelativeDocumentMoniker": "Diddy Dungeon\\Form1.cs",
               "ToolTip": "C:\\Users\\yello\\source\\repos\\Diddy Dungeon\\Diddy Dungeon\\Form1.cs [Design]",
               "RelativeToolTip": "Diddy Dungeon\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T18:40:49.421Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-29T18:40:49.421Z"
             }
           ]
         }
