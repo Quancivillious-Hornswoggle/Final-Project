@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diddy Dungeon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+748ebb846fa94f9c9ccabc7420cbbbc08edbd167")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f86a13f4b5377393f77396dbb983067d4f2f42da")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diddy Dungeon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diddy Dungeon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

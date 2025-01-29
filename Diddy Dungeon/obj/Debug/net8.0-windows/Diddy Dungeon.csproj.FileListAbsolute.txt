@@ -1,0 +1,17 @@
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\bin\Debug\net8.0-windows\Diddy Dungeon.exe
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\bin\Debug\net8.0-windows\Diddy Dungeon.deps.json
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\bin\Debug\net8.0-windows\Diddy Dungeon.runtimeconfig.json
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\bin\Debug\net8.0-windows\Diddy Dungeon.dll
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\bin\Debug\net8.0-windows\Diddy Dungeon.pdb
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy_Dungeon.Form1.resources
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.csproj.GenerateResource.cache
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.AssemblyInfoInputs.cache
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.AssemblyInfo.cs
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.csproj.CoreCompileInputs.cache
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.sourcelink.json
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.dll
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\refint\Diddy Dungeon.dll
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.pdb
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\Diddy Dungeon.genruntimeconfig.cache
+C:\Users\yello\source\repos\Diddy Dungeon\Diddy Dungeon\obj\Debug\net8.0-windows\ref\Diddy Dungeon.dll
