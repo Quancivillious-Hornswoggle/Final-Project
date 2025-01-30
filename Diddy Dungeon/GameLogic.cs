@@ -66,7 +66,7 @@ namespace Diddy_Dungeon
                         return Payout.ThreeMatch6;
                     case " 💩":
                         return Payout.ThreeMatch9;
-                    case " ☠️":
+                    case "☠️":
                         return Payout.ThreeMatch10;
                     case " 💕":
                         return Payout.ThreeMatch5;
@@ -88,7 +88,7 @@ namespace Diddy_Dungeon
         // Spin a wheel with a certain amount of delay till it stops
         private async Task<string> Spin(RichTextBox wheel, int stopDelay)
         {
-            string[] symbols = { " 😈", " 👅", " ❤️", " ♠️", " 👽", " 💩", " ☠️", " 💕", " 👾", " 🤖" };
+            string[] symbols = { " 😈", " 👅", " ❤️", " ♠️", " 👽", " 💩", "☠️", " 💕", " 👾", " 🤖" };
             Random rand = new Random();
             int finalIndex = rand.Next(symbols.Length);
             int currentIndex = rand.Next(symbols.Length);
