@@ -29,37 +29,29 @@
         private void InitializeComponent()
         {
             output1 = new RichTextBox();
-            output2 = new RichTextBox();
-            output3 = new RichTextBox();
             openFileButton = new Button();
             betButton = new Button();
             fileDisplay = new RichTextBox();
             openFileDialog1 = new OpenFileDialog();
+            output3 = new RichTextBox();
+            output2 = new RichTextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // output1
             // 
+            output1.BorderStyle = BorderStyle.None;
+            output1.DetectUrls = false;
+            output1.Enabled = false;
+            output1.Font = new Font("Segoe UI", 50F);
             output1.Location = new Point(55, 171);
+            output1.Multiline = false;
             output1.Name = "output1";
+            output1.ReadOnly = true;
+            output1.ScrollBars = RichTextBoxScrollBars.None;
             output1.Size = new Size(150, 144);
             output1.TabIndex = 0;
-            output1.Text = "";
-            // 
-            // output2
-            // 
-            output2.Location = new Point(211, 171);
-            output2.Name = "output2";
-            output2.Size = new Size(150, 144);
-            output2.TabIndex = 1;
-            output2.Text = "";
-            // 
-            // output3
-            // 
-            output3.Location = new Point(367, 171);
-            output3.Name = "output3";
-            output3.Size = new Size(150, 144);
-            output3.TabIndex = 2;
-            output3.Text = "";
+            output1.Text = "👽";
             // 
             // openFileButton
             // 
@@ -74,6 +66,7 @@
             // 
             // betButton
             // 
+            betButton.Enabled = false;
             betButton.Location = new Point(211, 562);
             betButton.Name = "betButton";
             betButton.Size = new Size(150, 66);
@@ -98,31 +91,74 @@
             // 
             openFileDialog1.FileName = "openFileDialog";
             // 
+            // output3
+            // 
+            output3.BorderStyle = BorderStyle.None;
+            output3.DetectUrls = false;
+            output3.Enabled = false;
+            output3.Font = new Font("Segoe UI", 50F);
+            output3.Location = new Point(367, 171);
+            output3.Multiline = false;
+            output3.Name = "output3";
+            output3.ReadOnly = true;
+            output3.ScrollBars = RichTextBoxScrollBars.None;
+            output3.Size = new Size(145, 144);
+            output3.TabIndex = 6;
+            output3.Text = "👽";
+            // 
+            // output2
+            // 
+            output2.BorderStyle = BorderStyle.None;
+            output2.DetectUrls = false;
+            output2.Enabled = false;
+            output2.Font = new Font("Segoe UI", 50F);
+            output2.Location = new Point(211, 171);
+            output2.Multiline = false;
+            output2.Name = "output2";
+            output2.ReadOnly = true;
+            output2.ScrollBars = RichTextBoxScrollBars.None;
+            output2.Size = new Size(150, 144);
+            output2.TabIndex = 7;
+            output2.Text = "👽";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 17F);
+            label1.Location = new Point(55, 53);
+            label1.Name = "label1";
+            label1.Size = new Size(457, 46);
+            label1.TabIndex = 8;
+            label1.Text = "DIDDY'S BETTING DUNGEON";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(567, 673);
+            Controls.Add(label1);
+            Controls.Add(output2);
+            Controls.Add(output3);
             Controls.Add(fileDisplay);
             Controls.Add(betButton);
             Controls.Add(openFileButton);
-            Controls.Add(output3);
-            Controls.Add(output2);
             Controls.Add(output1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private RichTextBox output1;
-        private RichTextBox output3;
-        private RichTextBox output2;
         private Button openFileButton;
         private Button betButton;
         private RichTextBox fileDisplay;
         private OpenFileDialog openFileDialog1;
+        private RichTextBox output3;
+        private RichTextBox output2;
+        private Label label1;
     }
 }
