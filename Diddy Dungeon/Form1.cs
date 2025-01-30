@@ -45,5 +45,11 @@ namespace Diddy_Dungeon
             GameLogic game = new GameLogic();
             await game.Run();
         }
+
+        // Take Out Later dont feel like doing it rn
+        private void fileDisplay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
