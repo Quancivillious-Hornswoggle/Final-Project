@@ -95,7 +95,6 @@
             fileDisplay.Size = new Size(462, 106);
             fileDisplay.TabIndex = 5;
             fileDisplay.Text = "";
-            fileDisplay.TextChanged += fileDisplay_TextChanged;
             // 
             // openFileDialog1
             // 

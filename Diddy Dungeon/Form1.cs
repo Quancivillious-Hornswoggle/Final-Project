@@ -32,9 +32,8 @@ namespace Diddy_Dungeon
 
         private void OpenFileClick(object sender, EventArgs e) // Button to open file and set it to bet
         {
-            // Set file and encrypt it
+            // Set file
             FileHandler.SetFileToBet();
-            FileHandler.EncryptFile(betFilePath);
 
             betButton.Enabled = true;
         }
@@ -44,17 +43,17 @@ namespace Diddy_Dungeon
             openFileButton.Enabled = false;
             betButton.Enabled = false;
             // Add file to memory
+
+            Cursor = Cursors.WaitCursor;
             FileHandler.AddFileToMemory(betFilePath);
+            Cursor = Cursors.Default;
+
+            // Encrypt the file only after actively betting it
+            FileHandler.EncryptFile(betFilePath);
 
             // Run game logic
             GameLogic game = new GameLogic();
             await game.Run();
-        }
-
-        // Take Out Later dont feel like doing it rn
-        private void fileDisplay_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

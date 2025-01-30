@@ -6,12 +6,13 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Diddy_Dungeon
 {
     internal class FileHandler
     {
-        private static List<string[]> filesInMemory = new List<string[]>(); 
+        private static List<(string FilePath, byte[] Data)> filesInMemory = new();
 
         private static byte[] key;
         private static byte[] iv;
@@ -110,11 +111,8 @@ namespace Diddy_Dungeon
         {
             try
             {
-                string[] fileInfo = new string[2];
-                fileInfo[0] = fileInfo[0];
-                fileInfo[1] = File.ReadAllBytes(filePath).ToString();
-                filesInMemory.Add(fileInfo);
-
+                byte[] fileData = File.ReadAllBytes(filePath);
+                filesInMemory.Add((filePath, fileData));
                 return true;
             }
             catch (Exception)
@@ -127,14 +125,17 @@ namespace Diddy_Dungeon
         {
             try
             {
-                foreach (string[] item in filesInMemory)
+                foreach (var item in filesInMemory)
                 {
-                    byte[] filebytes = item[1];
-                    File
+                    // check if its the most recent file to skip it so it just gets decrypted
+                    if (item.FilePath == filesInMemory[filesInMemory.Count - 1].FilePath)
+                        break;
+                    File.WriteAllBytes(item.FilePath, item.Data);
+                    Console.WriteLine($"Restored: {item.FilePath}");
                 }
-
                 return true;
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }

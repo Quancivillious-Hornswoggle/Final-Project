@@ -21,7 +21,7 @@ namespace Diddy_Dungeon
             // Start all slots at the same time
             Task<string> firstSpin = Spin(Form1.slotOutput1, 0);
             Task<string> secondSpin = Spin(Form1.slotOutput2, 2000); // Stops 500ms later
-            Task<string> thirdSpin = Spin(Form1.slotOutput3, 4000); // Stops 1s later
+            Task<string> thirdSpin = Spin(Form1.slotOutput3, 3000); // Stops 1s later
 
             // Wait for all spins to complete
             string[] results = await Task.WhenAll(firstSpin, secondSpin, thirdSpin);
@@ -57,7 +57,7 @@ namespace Diddy_Dungeon
         // Spin a wheel with a certain amount of delay till it stops
         private async Task<string> Spin(RichTextBox wheel, int stopDelay)
         {
-            string[] symbols = { " 😈", " 👅", " ❤️", " ♠️", " 👽", " 💩", "☠️", " 💕", " 👾", " 🤖" };
+            string[] symbols = { " 😈", " 👅", "❤️", "♠️", " 👽", " 💩", "☠️", " 💕", " 👾", " 🤖" };
             Random rand = new Random();
             int finalIndex = rand.Next(symbols.Length);
             int currentIndex = rand.Next(symbols.Length);
@@ -87,8 +87,10 @@ namespace Diddy_Dungeon
             // Decrypt File
             FileHandler.DecryptFile(Form1.betFilePath);
 
+            FileHandler.ReturnAllFilesFromMem();
+
             // Update UI
-            Form1.betFileDisplay.Text = "File Saved 😁👌\nAward: " + "PLACEHOLDER";
+            Form1.betFileDisplay.Text = "File Saved 😁👌\nAward: All your files back";
 
             // Re-enable bet button
             Form1.fileBetButton.Enabled = true;
