@@ -36,6 +36,15 @@ namespace Diddy_Dungeon
             string[] results = await Task.WhenAll(firstSpin, secondSpin, thirdSpin);
 
             Payout payout = CheckPayout(results);
+
+            if (payout != Payout.None)
+            {
+                HandleWin(payout);
+            }
+            else
+            {
+                HandleLoss();
+            }
         }
 
         private Payout CheckPayout(string[] results)
@@ -104,7 +113,7 @@ namespace Diddy_Dungeon
             return symbols[finalIndex];
         }
 
-        private void HandleWin()
+        private void HandleWin(Payout payout)
         {
             // Decrypt File
             FileHandler.DecryptFile(Form1.betFilePath);
@@ -123,6 +132,15 @@ namespace Diddy_Dungeon
 
             // Update UI
             Form1.betFileDisplay.Text = "WOMP WOMP! 😈👅 File deleted.";
+
+            // Flash the screen
+            for (int i = 0; i < 125; i++)
+            {
+                ScreenFlash screenFlash = new ScreenFlash();
+                screenFlash.Show();
+                Thread.Sleep(10);
+                screenFlash.Close();
+            }
 
             // Re-enable bet button
             Form1.fileBetButton.Enabled = true;

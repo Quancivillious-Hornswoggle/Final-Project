@@ -40,10 +40,10 @@ namespace Diddy_Dungeon
 
         private async void BetButtonClick(object sender, EventArgs e)
         {
+            openFileButton.Enabled = false;
+            betButton.Enabled = false;
             GameLogic game = new GameLogic();
             await game.Run();
-            betButton.Enabled = false;
-            openFileButton.Enabled = false;
         }
     }
 }
