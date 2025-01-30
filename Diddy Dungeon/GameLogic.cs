@@ -13,16 +13,7 @@ namespace Diddy_Dungeon
         {
             None,   
             TwoMatch,  
-            ThreeMatch1,
-            ThreeMatch2,
-            ThreeMatch3,
-            ThreeMatch4,
-            ThreeMatch5,
-            ThreeMatch6,
-            ThreeMatch7,
-            ThreeMatch8,
-            ThreeMatch9,
-            ThreeMatch10,
+            ThreeMatch
         }
 
         public async Task Run()
@@ -52,29 +43,7 @@ namespace Diddy_Dungeon
             // Check if all three symbols are the same and determine check one
             if (results[0] == results[1] && results[1] == results[2])
             {
-                switch (results[0])
-                {
-                    case " 😈":
-                        return Payout.ThreeMatch3;
-                    case " 👅":
-                        return Payout.ThreeMatch2;
-                    case " ❤️":
-                        return Payout.ThreeMatch4;
-                    case " ♠️":
-                        return Payout.ThreeMatch1;
-                    case " 👽":
-                        return Payout.ThreeMatch6;
-                    case " 💩":
-                        return Payout.ThreeMatch9;
-                    case "☠️":
-                        return Payout.ThreeMatch10;
-                    case " 💕":
-                        return Payout.ThreeMatch5;
-                    case " 👾":
-                        return Payout.ThreeMatch7;
-                    case " 🤖":
-                        return Payout.ThreeMatch8;
-                }
+                return Payout.ThreeMatch;
             }
             // Check if two symbols match
             else if (results[0] == results[1] || results[1] == results[2] || results[0] == results[2])

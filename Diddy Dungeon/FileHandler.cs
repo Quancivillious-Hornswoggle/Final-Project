@@ -11,6 +11,8 @@ namespace Diddy_Dungeon
 {
     internal class FileHandler
     {
+        private static List<string[]> filesInMemory = new List<string[]>(); 
+
         private static byte[] key;
         private static byte[] iv;
         public static bool SetFileToBet()
@@ -25,7 +27,7 @@ namespace Diddy_Dungeon
                 Form1.betFileDisplay.Text = $"File being bet:\n{Form1.betFilePath}";
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -98,7 +100,41 @@ namespace Diddy_Dungeon
                 File.WriteAllBytes(filePath, decryptedContent);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public static bool AddFileToMemory(string filePath)
+        {
+            try
+            {
+                string[] fileInfo = new string[2];
+                fileInfo[0] = fileInfo[0];
+                fileInfo[1] = File.ReadAllBytes(filePath).ToString();
+                filesInMemory.Add(fileInfo);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public static bool ReturnAllFilesFromMem()
+        {
+            try
+            {
+                foreach (string[] item in filesInMemory)
+                {
+                    byte[] filebytes = item[1];
+                    File
+                }
+
+                return true;
+            } catch (Exception)
             {
                 return false;
             }
