@@ -105,12 +105,22 @@ namespace Diddy_Dungeon
             Form1.betFileDisplay.Text = "WOMP WOMP! 😈👅 File deleted.";
 
             // Flash the screen
-            for (int i = 0; i < 125; i++)
+            /*for (int i = 0; i < 125; i++)
             {
                 ScreenFlash screenFlash = new ScreenFlash();
                 screenFlash.Show();
                 await Task.Delay(10);
                 screenFlash.Close();
+            }*/
+
+            for (int i = 0; i <  5; i++)
+            {
+                ScreenFlash screenFlash = new ScreenFlash();
+                screenFlash.BackColor = Color.Red;
+                screenFlash.Show();
+                await Task.Delay(500);
+                screenFlash.Close();
+                await Task.Delay(500);
             }
 
             // Re-enable bet button

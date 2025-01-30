@@ -34,8 +34,11 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Red;
+            BackColor = Color.Black;
+            BackgroundImage = Properties.Resources.app_icon;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "ScreenFlash";
             ShowIcon = false;
