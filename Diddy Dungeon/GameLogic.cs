@@ -12,8 +12,7 @@ namespace Diddy_Dungeon
         enum Payout
         {
             None,   
-            TwoMatch,  
-            ThreeMatch
+            Full
         }
 
         public async Task Run()
@@ -30,25 +29,26 @@ namespace Diddy_Dungeon
 
             if (payout != Payout.None)
             {
-                HandleWin(payout);
+                HandleWin();
             }
             else
             {
-                HandleLoss();
+                //Task.Run(() => HandleLoss());
+                await HandleLoss();
             }
         }
 
         private Payout CheckPayout(string[] results)
         {
-            // Check if all three symbols are the same and determine check one
+            // Check if all three symbols are the same
             if (results[0] == results[1] && results[1] == results[2])
             {
-                return Payout.ThreeMatch;
+                return Payout.Full;
             }
             // Check if two symbols match
             else if (results[0] == results[1] || results[1] == results[2] || results[0] == results[2])
             {
-                return Payout.TwoMatch;
+                return Payout.Full;
             }
             // If all symbols are different
             return Payout.None;
@@ -82,7 +82,7 @@ namespace Diddy_Dungeon
             return symbols[finalIndex];
         }
 
-        private void HandleWin(Payout payout)
+        private void HandleWin()
         {
             // Decrypt File
             FileHandler.DecryptFile(Form1.betFilePath);
@@ -96,7 +96,7 @@ namespace Diddy_Dungeon
             Form1.fileBetButton.Enabled = true;
         }
 
-        private void HandleLoss()
+        private async Task HandleLoss()
         {
             // Delete File
             File.Delete(Form1.betFilePath);
@@ -109,7 +109,7 @@ namespace Diddy_Dungeon
             {
                 ScreenFlash screenFlash = new ScreenFlash();
                 screenFlash.Show();
-                Thread.Sleep(10);
+                await Task.Delay(10);
                 screenFlash.Close();
             }
 
